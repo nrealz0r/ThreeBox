@@ -4,20 +4,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #222;
+  background: #242424;
 }
-.container{
+
+.mainlogo {
+  margin-bottom: 30px;
+}
+
+.container {
   display: flex;
+  align-content: center;
   gap: 50px;
 }
-.container .box{
+
+.container .box {
   position: relative;
   width: 300px;
   height: 400px;
@@ -31,7 +40,8 @@ body{
   color: #fff;
   overflow: hidden;
 }
-.box span{
+
+.box span {
   position: absolute;
   display: block;
   width: 0;
@@ -42,7 +52,8 @@ body{
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
 }
-.box:hover span{
+
+.box:hover span {
   width: 300px;
   height: 300px;
 }
